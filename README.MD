@@ -2,11 +2,11 @@
 
 ## 📣 Abstract 
 
-This is a project developed to HTML/CSS Interfaces discipline of Software Engineering course from Infnet Institute.
+This is a project developed on HTML/CSS Interfaces discipline of Software Engineering course from Infnet Institute.
 
 ## 🔥 Live Demo 
 
-Avaiable in https://chlima88.github.io/infnet-html-css-tp3
+Available in https://chlima88.github.io/infnet-html-css-tp3
 
 
 
