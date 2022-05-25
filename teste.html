@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    p {
+      font-size: 20px; 
+      margin-left: 8px;
+     }
+
+    .em {
+      font-size: 2em;
+    }
+    
+    .rem {
+      font-size: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <p>p { font-size: 20px } -- Elemento pai com font-size especifico</p>
+  <p>.em {font-size: 2em} -- Tamanho relativo ao elemento pai (p): 2 * 20px = 40px</p>
+  <p>.rem {font-size: 2rem} -- Tamanho relativo ao elemento root (html): 2 * 16px = 32px</p>
+
+  <p>Teste com <span class="em">em</span></p>
+  <p>Teste com <span class="rem">rem</span></p>
+</body>
+</html>
