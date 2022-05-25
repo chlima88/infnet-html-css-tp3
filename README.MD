@@ -2,7 +2,7 @@
 
 ## 📣 Abstract 
 
-This is a project developed to HTML/CSS Interfaces discipline from Infnet Institute.
+This is a project developed to HTML/CSS Interfaces discipline of Software Engineering course from Infnet Institute.
 
 ## 🔥 Live Demo 
 
