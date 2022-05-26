@@ -61,7 +61,7 @@ body #container {
 
     position: relative;
 
-    width: var(--global-container-width);
+    max-width: var(--global-container-width);
     height: 100vh;
     margin: auto;
 }
@@ -85,7 +85,7 @@ footer div {
     /* flex-direction: column; */
     align-items: center;
     justify-content: space-between;
-    width: var(--global-container-width);
+    max-width: var(--global-container-width);
     margin: auto;  
     padding: 2.4rem 2.8rem;
 }
@@ -93,8 +93,8 @@ footer div {
 header .logoContainer {
     margin-inline: 0 5rem;
     padding: 0.6rem;
-    height: 14rem;
-    width: 14rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 100px;
     background-color: hsl(38, 94%, 79%);
     flex-shrink: 0;
@@ -134,7 +134,7 @@ nav a:hover {
 main {
     margin: 19rem auto 0;
     padding: 2.8rem ;
-    width: var(--global-container-width);
+    max-width: var(--global-container-width);
 }
 
 main > strong {
@@ -164,7 +164,7 @@ h1 {
 }
 
 .banner {
-    max-width: 100%;
+    width: 100%;    
 }
 
 section {  
@@ -176,6 +176,7 @@ div.divSection {
     flex-direction: row;
     justify-content: space-between;
 }
+
 div.divSection section { 
     width: 45%;
 }
@@ -265,10 +266,13 @@ td div {
     height: 20rem;
 }
 
-td img {
-    height: 75%;
-    width: 75%;
-    margin: 0 1.2rem;
+td div.prodImgContainer {
+    width: 150px;
+    height: 150px;
+}
+
+td div.prodImgContainer img {
+    height: 100%;
 }
 
 
@@ -304,7 +308,7 @@ main .formContainer {
 }
 
 .formContainer input[type=submit],
-.formContainer input[type=button] {
+.formContainer input[type=reset] {
     background-color: var(--color-500);
     color: white;
     font-size: 1.4rem;
@@ -336,3 +340,32 @@ footer p {
     font-size: 1.2rem;
 }
 
+
+
+@media  (max-width: 768px) {
+    :root {
+        font-size: 37%;
+    }
+    
+    header div.logoContainer {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    div.divSection {
+        flex-direction: column;
+    }
+
+    div.divSection section { 
+        width: 100%;
+    }
+
+    tr td div.prodImgContainer {
+        width: 100px;
+        height: 100px;
+    }
+
+    main .formContainer {
+        width: 100%;
+    }
+}
