@@ -325,7 +325,7 @@ footer {
     background-color: var(--header-color);
     width: 100vw;
     
-    /* position: sticky; */
+    position: relative;
     left: 0px;
     right: 0px;
 }
