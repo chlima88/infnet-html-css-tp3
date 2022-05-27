@@ -14,70 +14,71 @@
 </head>
 
 <body>
-    
+    <div id=container>
 
-    <header>
+        <header>
 
-        <div>
-            <div class="logoContainer">
-                <img src="./images/logo_kombi_coffee.png" class="logo" title="logo" alt="Logotipo Kombi Coffee">
+            <div>
+                <div class="logoContainer">
+                    <img src="./images/logo_kombi_coffee.png" class="logo" title="logo" alt="Logotipo Kombi Coffee">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li >
+                            <a href="./" title="Pagina inicial" >HOME</a>
+                        </li>
+                        <li >
+                            <a href="#" title="Consultar endereços" >LOCAL</a>
+                        </li>
+                        <li >
+                            <a href="./cardapio.html" title="Acessar cardápio" >CARDÁPIO</a>
+                        </li>
+                        <li >
+                            <a href="#" title="Lista de eventos" >EVENTOS</a>
+                        </li>
+                        <li >
+                            <a href="./contato.html" title="Contato" >CONTATO</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-            <nav>
-                <ul>
-                    <li >
-                        <a href="./" title="Pagina inicial" >HOME</a>
-                    </li>
-                    <li >
-                        <a href="#" title="Consultar endereços" >LOCAL</a>
-                    </li>
-                    <li >
-                        <a href="./cardapio.html" title="Acessar cardápio" >CARDÁPIO</a>
-                    </li>
-                    <li >
-                        <a href="#" title="Lista de eventos" >EVENTOS</a>
-                    </li>
-                    <li >
-                        <a href="./contato.html" title="Contato" >CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
 
 
+        </header>
 
-    </header>
+        <main>    
+            <h1>Contato</h1>
+            
+            <section>
 
-    <main>    
-        <h1>Contato</h1>
+                <div class="formContainer">
+                    <form >
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="comentario">Comentário</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div>
+                <p>Copyright</p>
+            </div>
+        </footer>
         
-        <section>
-
-            <div class="formContainer">
-                <form >
-                    <label for="nome">Nome: </label>
-                    <input type="text" id="nome" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                    <label for="comentario">Comentário</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </div>
-                    
-                </form>
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <div>
-            <p>Copyright</p>
-        </div>
-    </footer>
-  
+    </div>
 </body>
 </html>
