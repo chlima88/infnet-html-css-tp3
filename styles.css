@@ -254,6 +254,7 @@ th p {
 }
 
 td p { 
+    font-size: 1.5rem;
     display: inline-block;
     line-height: 1.25em;
     margin-inline: 1.5em;
@@ -321,7 +322,7 @@ main .formContainer {
 }
 
 .formContainer input[type=submit]:hover,
-.formContainer input[type=button]:hover  {
+.formContainer input[type=reset]:hover  {
     filter: brightness(1.1);
 }
 
@@ -344,7 +345,7 @@ footer p {
 
 @media  (max-width: 768px) {
     :root {
-        font-size: 37%;
+        font-size: 57%;
     }
     
     header div.logoContainer {
