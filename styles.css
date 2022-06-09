@@ -2,9 +2,9 @@
 
 * {
     box-sizing: border-box;
+    font-family: Poppins;
     margin: 0;
     padding: 0;
-    font-family: Poppins;
 }
 
 :root {
@@ -26,27 +26,27 @@
 
   
     --header-color: var(--color-900);
-    --nav-link-color: var(--color-300);
     --hover-nav-link-color: var(--color-500);
+    --nav-link-color: var(--color-300);
 
 
     --body-bgcolor: var(--color-30);
     --headings-color: var(--color-600);
-    --text-color: var(--color-900);
+    --hover-link-color: var(--color-400);
     --light-text-color: var(--color-300);
     --link-color: var(--color-600);
-    --hover-link-color: var(--color-400);
+    --text-color: var(--color-900);
     
 }
 
 body {
+    background-color: var(--body-bgcolor);
     color: var(--text-color);
     font-size: 1.6em;
-    background-color: var(--body-bgcolor);
 
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     justify-content: space-between;
 
     overflow-y: scroll;
