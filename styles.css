@@ -49,9 +49,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    overflow-y: overlay;
+    overflow-y: scroll;
 }
-
 
 body #container {
     display: flex;
@@ -66,17 +65,15 @@ body #container {
     margin: auto;
 }
 
-
 header {
     background: linear-gradient(0deg, rgba(51, 35, 32, 0.92), rgba(51, 35, 32, 0.92)), url("./images/banner.jpg");
     background-size: cover;
     background-position: center;
     
-    width: 100vw;
+    width: 100%;
     position: fixed;
     right: 0;
     left: 0;
-
 }
 
 header div,
@@ -90,7 +87,7 @@ footer div {
     padding: 2.4rem 2.8rem;
 }
 
-header .logoContainer {
+header .logo-container {
     margin-inline: 0 5rem;
     padding: 0.6rem;
     height: 12rem;
@@ -123,16 +120,13 @@ nav a {
     text-decoration: none;
 }
 
-
 nav a:hover {
     color: var(--text-color);
     background-color: var(--hover-nav-link-color);
 }
 
-
-
 main {
-    margin: 19rem auto 0;
+    margin: 17rem auto 0;
     padding: 2.8rem ;
     max-width: var(--global-container-width);
 }
@@ -171,35 +165,35 @@ section {
     margin-top: 3.2rem;
 }
 
-div.divSection {
+div.div-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-div.divSection section { 
+div.div-section section { 
     width: 45%;
 }
 
-div.divSection section > div {
+div.div-section section > div {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-section div .cardTextContainer {
+section div .card-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section div .cardTextContainer p {
+section div .card-text-container p {
     font-size: 0.875em;
     line-height: 1.3em;
     margin-left: 2.5rem;
 }
 
-section div .cardImgContainer {
+section div .card-img-container {
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -207,12 +201,10 @@ section div .cardImgContainer {
     flex-shrink: 0;
 }
 
-.cardImgContainer img {
+.card-img-container img {
     width: 100%;
     height: 100%;
 }
-
-
 
 h2 {
     font-size: 2.4rem;
@@ -221,12 +213,10 @@ h2 {
     color: var(--headings-color);
 }
 
-
 table {
     width: 100%;
     text-align: justify;
 }
-
 
 th,
 td {
@@ -267,17 +257,16 @@ td div {
     height: 20rem;
 }
 
-td div.prodImgContainer {
+td .prod-img-container {
     width: 150px;
     height: 150px;
 }
 
-td div.prodImgContainer img {
+td .prod-img-container img {
     height: 100%;
 }
 
-
-main .formContainer {
+main .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,9 +276,9 @@ main .formContainer {
     margin-inline: auto;
 }
 
-.formContainer input[type=text],
-.formContainer input[type=email], 
-.formContainer textarea{
+.form-container input[type=text],
+.form-container input[type=email], 
+.form-container textarea{
     font-size: 1em;
     color: var(--text-color);
     padding-inline: 0.5em;
@@ -302,14 +291,14 @@ main .formContainer {
     resize: vertical;
 }
 
-.formContainer div {
+.form-container div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.formContainer input[type=submit],
-.formContainer input[type=reset] {
+.form-container input[type=submit],
+.form-container input[type=reset] {
     background-color: var(--color-500);
     color: white;
     font-size: 1.4rem;
@@ -321,11 +310,10 @@ main .formContainer {
     width: 49%;
 }
 
-.formContainer input[type=submit]:hover,
-.formContainer input[type=reset]:hover  {
+.form-container input[type=submit]:hover,
+.form-container input[type=reset]:hover  {
     filter: brightness(1.1);
 }
-
 
 footer {
     background-color: var(--header-color);
@@ -341,32 +329,30 @@ footer p {
     font-size: 1.2rem;
 }
 
-
-
 @media  (max-width: 768px) {
     :root {
         font-size: 57%;
     }
     
-    header div.logoContainer {
+    header div.logo-container {
         width: 8rem;
         height: 8rem;
     }
 
-    div.divSection {
+    div.div-section {
         flex-direction: column;
     }
 
-    div.divSection section { 
+    div.div-section section { 
         width: 100%;
     }
 
-    tr td div.prodImgContainer {
+    tr td div.prod-img-container {
         width: 100px;
         height: 100px;
     }
 
-    main .formContainer {
+    main .form-container {
         width: 100%;
     }
 }
